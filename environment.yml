@@ -1,0 +1,42 @@
+name: binder-environment
+channels:
+  - conda-forge
+dependencies:
+  # Enforce Python version
+  - python=3.12
+
+  # Scientific python
+  - jupyterlab
+  - networkx
+  - numpy
+  - openpyxl
+  - pandas
+  - scipy
+
+  # Plotting
+  - ipympl
+  - matplotlib-base
+  - plotly
+  - seaborn
+
+  # Machine learning
+  - scikit-learn
+
+  # General chemistry
+  - ase
+  - mendeleev
+  - mordred
+  - rdkit
+
+  # Materials Project
+  - mp-api
+  - pymatgen
+
+  # Utilities
+  - pycodestyle
+  - ruff
+
+  # Install some things through pip
+  - pip
+  # - pip:
+  #   - mpcontribs-client
